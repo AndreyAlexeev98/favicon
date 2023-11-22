@@ -17,3 +17,4 @@ __Необходимо дополнение кейса по статье - https
 `<link rel="icon" href="/assets/32x32.png" sizes="32x32" type="image/png">`
 3. Для apple touch устройств - из корня сайта подключаем `<link rel="apple-touch-icon" href="/apple-touch-icon.png">` размером исходника 180×180.
 4. Для андроидов подключаем webmanifest - `<link rel="manifest" href="/manifest.webmanifest">`. В самом файле (Тут важная иконка 192-192px. И тут же можно задать цвета, название. Всё равно пригодится.)
+5. Так же в head лежит полная настройка большинства метатегов
