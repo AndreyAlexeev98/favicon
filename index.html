@@ -1,14 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
+    <!-- кодировка -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Favicon example</title>
+    <!-- устанавливает режим совместимости IE в "edge", что означает использование последней доступной версии движка рендеринга страницы, минуя режим совместимости и предотвращая использование режимов эмуляции предыдущих версий IE -->
+
+    <!-- настройка адаптивного отображения -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no" /> <!-- уточнить требования проекта -->
+    <meta name="HandheldFriendly" content="True">
+
+    <!-- seo -->
+    <title>title</title> <!-- Для сниппета и браузерной закладки -->
+    <meta name="description" content="description"> <!-- Для сниппета -->
+    <meta name="keywords" content=""> <!-- В каких то поисковых системах еще учитываются -->
+    <meta name="robots" content="noindex"> <!-- Если нужен запрет индексации -->
+
+    <!-- paths project config -->
+    <base href="/" />
+
+    <!-- network config -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+    <!-- favicons для большинства устройств и браузеров -->
     <link rel="icon" href="/assets/16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="/assets/32x32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/manifest.webmanifest">
+
+    <!-- for PWA and mobile display -->
+    <!-- Назначение: Этот метатег указывает, может ли ваше веб-приложение быть открыто на мобильном устройстве в "полноэкранном" режиме, как самостоятельное веб-приложение, без браузерного интерфейса. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Назначение: Устанавливает название вашего веб-приложения, которое будет отображаться при запуске в полноэкранном режиме на устройствах Apple. -->
+    <meta name="apple-mobile-web-app-title" content="">
+    <!-- Определяет стиль полосы состояния (status bar) в полноэкранном режиме на устройствах Apple. -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Аналогично с apple-mobile-web-app-capable, но не только для Apple  -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Устанавливает имя вашего веб-приложения для широкого спектра устройств, не ограничиваясь только устройствами Apple. -->
+    <meta name="application-name" content="">
+
+    <!-- Для панели закладок в Яндекс браузере и при поисковой выдаче в Яндекс браузере. color - цвет фона иконки. Иконки нужны с прозрачным фоном -->
+    <meta content="/core/media/favicons/apple-touch-icon-120x120.png, color=#ffffff" name="yandex-tableau-widget">
+
+    <!-- Для IE и Edge -->
+    <meta content="#ffffff" name="msapplication-TileColor"> <!-- цвет фона иконок в панели закладок -->
+    <meta content="/static/core/browserconfig.xml" name="msapplication-config">
+    <meta content="/static/core/icons/mstile-144x144.png" name="msapplication-TileImage">
+    <meta content="/static/core/icons/mstile-70x70.png" name="msapplication-square70x70logo">
+    <meta content="/static/core/icons/mstile-150x150.png" name="msapplication-square150x150logo">
+    <meta content="/static/core/icons/mstile-310x150.png" name="msapplication-wide310x150logo">
+    <meta content="/static/core/icons/mstile-310x310.png" name="msapplication-square310x310logo">
+
+    <!-- Когда пользователь сохраняет ваш сайт на главном экране своего мобильного устройства или закладках браузера, браузер использует эти иконки. -->
+    <link rel="icon" sizes="192x192" href="/core/media/favicons/192x192.png">
+    <link rel="icon" sizes="256x256" href="/core/media/favicons/256x256.png">
+    <link rel="icon" sizes="384x384" href="/core/media/favicons/384x384.png">
+    <link rel="icon" sizes="512x512" href="/core/media/favicons/512x512.png">
+
+    <!-- Иконки будут использоваться в браузерных закладках техники Apple и для значков на главных экранах в PWA -->
+    <link rel="apple-touch-icon" sizes="80x80" href="/core/media/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/core/media/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/core/media/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="/core/media/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/core/media/favicons/apple-touch-icon-180x180.png">
+
+    <!-- Open Graph микроразметка для Facebook, Twitter, LinkedIn, Pinterest, WhatsApp, Telegram, Viber, Skype. Поддержка метаданных может изменяться с течением времени и зависеть от конкретных обновлений в каждом из этих сервисов.  -->
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:title" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="">
+    <meta property="og:image"
+        content="https://storage.yandexcloud.net/picasso-lk-static/core/media/og/icon-1200x630.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Если SPA, то необходимо передавать динамический url страницы, либо удалить метатег -->
+    <meta property="og:url" content="">
+    <!-- Если нужно указать автора странички (актуально для блога, постов, статей) -->
+    <meta property="article:author" content="None">
+    <!-- Если нужно указать автора странички (актуально для блога, постов, статей) -->
+    <meta property="article:publisher" content="None">
 </head>
 <body>
     
